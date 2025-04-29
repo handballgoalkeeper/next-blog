@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import React from "react";
 import Navigation from "@/partials/NavigationComponent";
 import Footer from "@/partials/FooterComponent";
+import AuthProvider from "@/context/auth.context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navigation />
-        {children}
-        <Footer />
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

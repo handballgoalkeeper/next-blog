@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import {useEffect} from "react";
-import {routes, StaticRoute} from "@/routes";
+import {routes, StaticRoute} from "@/app/routes";
 
 export default function Home() {
   const router = useRouter();

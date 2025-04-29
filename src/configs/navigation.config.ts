@@ -1,4 +1,4 @@
-import {routes, StaticRoute} from "@/routes";
+import {routes, StaticRoute} from "@/app/routes";
 
 export type NavigationItem = {
     displayName: string,
